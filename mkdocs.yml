@@ -1,0 +1,90 @@
+# Project information
+site_name: Cookbook
+site_url: https://book.gocnn.org
+site_author: ΣX
+site_description: AI ecosystem for Go.
+
+# Configuration
+theme:
+  name: material
+  logo: assets/gocnn.svg
+  favicon: assets/gocnn.svg
+  language: en
+  palette:
+    # Light mode - white
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      accent: deep orange
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark mode - black
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      accent: deep orange
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+    - navigation.top
+
+# Additional configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/gocnn
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/gitctrlx
+
+  generator: false
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+      cache_safe: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+# Page tree
+nav:
+  - Home: index.md
