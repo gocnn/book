@@ -4,6 +4,10 @@ site_url: https://book.gocnn.org
 site_author: ΣX
 site_description: AI ecosystem for Go.
 
+# Repository
+repo_url: https://github.com/gocnn/book
+repo_name: gocnn/book
+
 # Configuration
 theme:
   name: material
