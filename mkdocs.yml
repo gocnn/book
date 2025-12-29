@@ -59,6 +59,9 @@ extra:
 
   generator: false
 
+extra_css:
+  - stylesheets/extra.css
+
 # Plugins
 plugins:
   - search
@@ -91,4 +94,6 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: README.md
+  - Candy: candy/README.md
+  - Gocu: gocu/README.md

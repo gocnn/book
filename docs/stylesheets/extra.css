@@ -1,0 +1,23 @@
+/* Light mode customizations only (data-md-color-scheme="default") */
+[data-md-color-scheme="default"] {
+  /* Header (navigation bar) background - keep flat as requested */
+  --md-primary-fg-color: #fff8f5;
+  --md-primary-fg-color--light: #fff8f5;
+  --md-primary-fg-color--dark: #fff8f5;
+
+  /* Main content area background - add subtle layered depth for interaction */
+  --md-default-bg-color: #fffcfa;           /* Primary content background */
+  --md-default-bg-color--light: #fffdfa;    /* Slightly lighter for cards/admonitions */
+  --md-default-bg-color--lighter: #fffef9;  /* Lighter for hover/focus states */
+  --md-default-bg-color--lightest: #fffff8; /* Lightest for subtle overlays/separators */
+  --md-code-bg-color: #fff9f7;              /* Code blocks - faint warm tint for distinction */
+
+  /* Footer background - subtle variation for visual separation */
+  --md-footer-bg-color: #fff5f2;
+  --md-footer-bg-color--dark: #fff0ed;
+
+  /* Footer text colors - maintain readability */
+  --md-footer-fg-color: hsla(0, 0%, 0%, 1);
+  --md-footer-fg-color--light: hsla(0, 0%, 0%, 0.7);
+  --md-footer-fg-color--lighter: hsla(0, 0%, 0%, 0.3);
+}
