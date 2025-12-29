@@ -8,6 +8,10 @@ site_description: AI ecosystem for Go.
 repo_url: https://github.com/gocnn/book
 repo_name: gocnn/book
 
+# Copyright
+copyright: >
+  Copyright &copy; GoCNN
+
 # Configuration
 theme:
   name: material
